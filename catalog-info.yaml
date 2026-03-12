@@ -1,14 +1,3 @@
-# apiVersion: backstage.io/v1alpha1
-# kind: Component
-# metadata:
-#   name: openapi
-#   annotations:
-#     github.com/project-slug: caiotaavares/openapi
-# spec:
-#   type: other
-#   lifecycle: unknown
-#   owner: guests
-
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
@@ -28,7 +17,6 @@ spec:
   definition:
     $text: https://api.homolog.unesp.br/paades-api/publico/api-docs
 ---
-
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
@@ -37,9 +25,6 @@ metadata:
     - url: https://app.datadoghq.com/apm/entity/service%3Aacademico?dependencyMap.showNetworkMetrics=false&env=prod&fromUser=false&graphType=waterfall&groupMapByOperation=null&operationName=servlet.request&panels=qson%3A%28data%3A%28%29%2Cversion%3A%210%29&shouldShowLegend=true&spanKind=server&traceQuery=&start=1773333133727&end=1773336733727&paused=false
       title: Datadog
       icon: dashboard
-    - url: https://git.unesp.br/ndsi/programas-academicos/pos-graduacao/sispg
-      title: Gitlab
-      icon: git
   description: |
     API de integração do sistema Acadêmico.
     - Dev: https://api.dev.unesp.br/sispg/api/*
