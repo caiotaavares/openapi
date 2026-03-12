@@ -22,4 +22,4 @@ spec:
   lifecycle: production
   owner: guests
   definition:
-    $text: https://api.homolog.unesp.br/paades-api/publico/swagger-ui/index.html
+    $text: https://api.homolog.unesp.br/paades-api/publico/api-docs
