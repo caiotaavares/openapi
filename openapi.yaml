@@ -1,0 +1,39 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: academico
+  title: API Acadêmico
+  description: |
+    API de integração do sistema Acadêmico.
+    - Dev: https://api.dev.unesp.br/academico/api/*
+    - Prod: https://api.app.unesp.br/academico/api/*
+  annotations:
+    # Vincula esta API ao seu serviço existente no Datadog
+    datadoghq.com/service-id: "academico"
+spec:
+  type: openapi
+  lifecycle: production
+  owner: time_sisgrad
+  definition:
+    $text: |
+      openapi: 3.0.0
+      info:
+        title: API Acadêmico UNESP
+        version: "1.0.0"
+        description: "Documentação completa via Swagger"
+      servers:
+        - url: https://api.app.unesp.br/academico
+          description: Produção
+      paths:
+        /api/{proxy}:
+          get:
+            summary: Endpoint Genérico
+            parameters:
+              - name: proxy
+                in: path
+                required: true
+                schema:
+                  type: string
+            responses:
+              '200':
+                description: OK
