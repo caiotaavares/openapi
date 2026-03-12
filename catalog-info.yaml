@@ -49,4 +49,4 @@ spec:
   lifecycle: production
   owner: guests
   definition:
-    $text: https://api.dev.unesp.br/sispg-api/publico/swagger-ui/api-docs
+    $text: https://api.dev.unesp.br/sispg-api/publico/api-docs
