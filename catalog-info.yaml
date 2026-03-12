@@ -7,9 +7,8 @@ metadata:
       title: Datadog
       icon: dashboard
   description: |
-    API de integração do sistema Acadêmico.
-    - Dev: https://api.dev.unesp.br/academico/api/*
-    - Prod: https://api.app.unesp.br/academico/api/*
+    Dev: https://api.dev.unesp.br/academico/api/*
+    Prod: https://api.app.unesp.br/academico/api/*
 spec:
   type: openapi
   lifecycle: production
@@ -21,6 +20,9 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: sispg
+  tags:
+    - dev
+    - prod
   links:
     - url: https://app.datadoghq.com/apm/entity/service%3Aacademico?dependencyMap.showNetworkMetrics=false&env=prod&fromUser=false&graphType=waterfall&groupMapByOperation=null&operationName=servlet.request&panels=qson%3A%28data%3A%28%29%2Cversion%3A%210%29&shouldShowLegend=true&spanKind=server&traceQuery=&start=1773333133727&end=1773336733727&paused=false
       title: Datadog
@@ -29,9 +31,8 @@ metadata:
       title: Gitlab
       icon: GitHub
   description: |
-    API de integração do sistema Acadêmico.
-    - Dev: https://api.dev.unesp.br/sispg/api/*
-    - Prod: https://api.app.unesp.br/sispg/api/*
+    Dev: https://api.dev.unesp.br/sispg/api/*
+    Prod: https://api.app.unesp.br/sispg/api/*
 spec:
   type: openapi
   lifecycle: production
