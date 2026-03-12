@@ -20,7 +20,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: production
-  owner: guest
+  owner: guests
   definition: |
       openapi: "3.0.0"
       info:
