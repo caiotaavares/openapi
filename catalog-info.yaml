@@ -27,3 +27,23 @@ spec:
   owner: guests
   definition:
     $text: https://api.homolog.unesp.br/paades-api/publico/api-docs
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: sispg
+  links:
+    - url: https://app.datadoghq.com/apm/entity/service%3Aacademico?dependencyMap.showNetworkMetrics=false&env=prod&fromUser=false&graphType=waterfall&groupMapByOperation=null&operationName=servlet.request&panels=qson%3A%28data%3A%28%29%2Cversion%3A%210%29&shouldShowLegend=true&spanKind=server&traceQuery=&start=1773333133727&end=1773336733727&paused=false
+      title: Datadog
+      icon: dashboard
+  description: |
+    API de integração do sistema Acadêmico.
+    - Dev: https://api.dev.unesp.br/sispg/api/*
+    - Prod: https://api.app.unesp.br/sispg/api/*
+spec:
+  type: openapi
+  lifecycle: production
+  owner: guests
+  definition:
+    $text: https://api.dev.unesp.br/sispg-api/publico/swagger-ui/api-docs
