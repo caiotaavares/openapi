@@ -21,15 +21,5 @@ spec:
   type: openapi
   lifecycle: production
   owner: guests
-  definition: |
-      openapi: "3.0.0"
-      info:
-        title: API Acadêmico UNESP
-        version: 1.0.0
-        description: "Documentação completa via Swagger"
-      servers:
-        - url: https://api.app.unesp.br/academico
-      paths:
-        /api:
-          get:
-            summary: Endpoint Genérico
+  definition:
+    $text: https://api.homolog.unesp.br/paades-api/publico/swagger-ui/index.html
