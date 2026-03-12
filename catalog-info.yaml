@@ -22,4 +22,4 @@ spec:
   lifecycle: production
   owner: guests
   definition:
-    $text: https://api.homolog.unesp.br/paades-api/publico/api-docs
+    $text: https://api.dev.unesp.br/sispg-api/publico/api-docs/ACTUATOR
