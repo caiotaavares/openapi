@@ -25,6 +25,9 @@ metadata:
     - url: https://app.datadoghq.com/apm/entity/service%3Aacademico?dependencyMap.showNetworkMetrics=false&env=prod&fromUser=false&graphType=waterfall&groupMapByOperation=null&operationName=servlet.request&panels=qson%3A%28data%3A%28%29%2Cversion%3A%210%29&shouldShowLegend=true&spanKind=server&traceQuery=&start=1773333133727&end=1773336733727&paused=false
       title: Datadog
       icon: dashboard
+    - url: https://git.unesp.br/ndsi/programas-academicos/pos-graduacao/sispg
+      title: Gitlab
+      icon: GitHub
   description: |
     API de integração do sistema Acadêmico.
     - Dev: https://api.dev.unesp.br/sispg/api/*
